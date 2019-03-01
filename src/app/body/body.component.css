@@ -1,0 +1,10 @@
+.name-label{
+    font-size: 20px;
+}
+.your-name-label{
+    font-size: 20px;
+}
+.name-input{
+    border: 2px solid blueviolet;
+    padding: 1px;
+}

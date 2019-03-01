@@ -1,0 +1,9 @@
+.input{
+    border:3px solid black;
+}
+button{
+    color:blueviolet;
+    width: 10%;
+    height:20%;
+    margin: 20px;
+}
