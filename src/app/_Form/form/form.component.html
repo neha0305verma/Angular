@@ -1,0 +1,30 @@
+<div class="myform">
+    <form [formGroup]="registration" (ngSubmit)="createForm()">
+        <label>
+            Name:
+            <input type="text" class="myinput" placeholder="enter name" formControlName="name">
+        </label>
+        <label>
+            Email:
+            <input type="text" class="myinput" placeholder="enter email" formControlName="email">
+        </label>
+        <label>
+            Password:
+            <input type="password" class="myinput" placeholder="enter password" formControlName="password">
+        </label>
+        <div formGroupName="address">
+                <label>
+                        Street:
+                        <input type="text" class="myinput" placeholder="enter street" formControlName="street">
+                    </label>
+                    <label>
+                        Landmark:
+                        <input type="text" class="myinput" placeholder="enter landmark" formControlName="landmark">
+                    </label>
+        </div>
+        <button class="btn btn-success" [disabled]="registration.invalid" type="submit">Submit</button>
+    </form>
+    <!-- <h4>{{name.value}}</h4>
+    <h4>{{email.value}}</h4>
+    <h4>{{phone.value}}</h4> -->
+</div>
