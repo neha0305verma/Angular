@@ -11,6 +11,9 @@ import { ResetComponent } from './footer/reset/reset.component';
 import { HighlightDirective } from './highlight.directive';
 import { CourcesComponent } from './cources/cources.component';
 import { FormComponent } from './_Form/form/form.component';
+import { ApprouteModule } from './_Route/approute/approute.module';
+import { RouterModule } from '@angular/router';
+import { PagenotfoundComponent } from './_PageNotFound/pagenotfound/pagenotfound.component';
 
 
 
@@ -24,14 +27,19 @@ import { FormComponent } from './_Form/form/form.component';
     ResetComponent,
     HighlightDirective,
     CourcesComponent,
-    FormComponent
+    FormComponent,
+    PagenotfoundComponent,
+    
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ApprouteModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
