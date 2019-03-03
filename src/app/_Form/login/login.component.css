@@ -1,0 +1,11 @@
+.myform{
+    background-color: azure;
+    border:2px solid #000;
+    padding:20px;
+}
+.myinput{
+    border:2px solid #000;
+}
+.error{
+    color:red;
+}

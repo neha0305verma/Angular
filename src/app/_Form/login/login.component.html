@@ -1,0 +1,15 @@
+<div class="login row">
+  <form [formGroup]="login" (ngSubmit)="submit()" class="myform">
+    <label class="col-md-12">
+      Email:
+      <input type="text" class="myinput" placeholder="enter email" formControlName="email">
+    </label>
+    <p class="error" *ngIf="login.get('email').errors?.required && (login.get('email').touched) || (login.get('email').dirty)">Email is required</p>
+    <label class="col-md-12">
+      Password:
+      <input type="password" class="myinput" placeholder="enter password" formControlName="password">
+    </label>
+    <h4 class="error"></h4>
+    <button  class="col-md-4 btn btn-primary" type="submit" [disabled]="login.invalid">Submit</button>
+  </form>
+</div>
