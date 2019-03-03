@@ -11,12 +11,10 @@ import { ResetComponent } from './footer/reset/reset.component';
 import { HighlightDirective } from './highlight.directive';
 import { CourcesComponent } from './cources/cources.component';
 import { FormComponent } from './_Form/form/form.component';
-<<<<<<< HEAD
 import { ApprouteModule } from './_Route/approute/approute.module';
 import { RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from './_PageNotFound/pagenotfound/pagenotfound.component';
-=======
->>>>>>> routes
+import { LoginComponent } from './_Form/login/login.component';
 
 
 
@@ -30,24 +28,16 @@ import { PagenotfoundComponent } from './_PageNotFound/pagenotfound/pagenotfound
     ResetComponent,
     HighlightDirective,
     CourcesComponent,
-<<<<<<< HEAD
     FormComponent,
     PagenotfoundComponent,
-    
-=======
-    FormComponent
->>>>>>> routes
+    LoginComponent   
   ],
   imports: [
     ReactiveFormsModule,
     BrowserModule,
-<<<<<<< HEAD
     FormsModule,
     ApprouteModule,
-    RouterModule,
-=======
-    FormsModule
->>>>>>> routes
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
